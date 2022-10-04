@@ -8,7 +8,21 @@ Linkedin: https://www.linkedin.com/in/joseph-chang-856b24176/
 
 ## Virtual Avatar
 
+A web-based virtual face renderer inspired by the Metaverse.
+
 This App is currently a frontend only APP. I am working on adding a backend to provide client-to-client streaming service.
+
+Github: https://github.com/Trip1eLift/virtual-avatar
+
+Website: https://virtualavatar.trip1elift.com/
+
+## Tangle 
+
+A Chinese version of Wordle using Tang Poetry as word bank.
+
+Github: https://github.com/Trip1eLift/Tangle_wordle4TangPoetry
+
+Website: https://tangle.trip1elift.com/
 
 ## License
 
