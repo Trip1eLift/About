@@ -1,4 +1,3 @@
-// 
 /**
  * This is a react component meant to pull display About from the 
  * readme as a JSX Modal.
