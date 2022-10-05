@@ -4,15 +4,13 @@
  * 
  * Module requirements:
  * 1. React
- * 3. marked
- * 4. axios
+ * 2. marked
  * 
  * Author: Joseph Chang
  */
 
 import * as React from 'react';
 import { marked } from 'marked';
-import axios from 'axios';
 
 export default function About({open, setOpen}) {
   const [aboutText, setAboutText] = React.useState("");
@@ -21,13 +19,12 @@ export default function About({open, setOpen}) {
   }
 
   React.useEffect(() => {
-    if (localStorage.getItem("about"))
-      setAboutText(localStorage.getItem("about"));
-    axios.get("https://raw.githubusercontent.com/Trip1eLift/About/main/README.md")
-      .then((res) => {
-        setAboutText(res.data);
-        localStorage.setItem("about", res.data);
-      })
+    fetch("https://raw.githubusercontent.com/Trip1eLift/About/main/README.md")
+      .then(async (response) => {
+        const data = await response.text();
+        console.log(data);
+        setAboutText(data);
+      });
   }, []);
 
   const style = {
@@ -35,9 +32,9 @@ export default function About({open, setOpen}) {
     position: 'absolute',
     backgroundColor: "white",
     color: "black",
-    top: "5vh",
+    top: "10vh",
     height: "80vh",
-    left: "5%",
+    left: "10%",
     width: "80%",
     overflow: "scroll",
     zIndex: "2",
