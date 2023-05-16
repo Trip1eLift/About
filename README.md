@@ -1,3 +1,5 @@
+<span style="color:red">Virtual Avatar Streaming service is currently down due to infrastructure cost. Please contact me if you want a demo.</span>
+
 # About
 
 This is a product built by Trip1eLift to practice, proof of concepts, or just for fun.
